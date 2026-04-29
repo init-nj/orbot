@@ -256,7 +256,7 @@ def build_equity_chart(equity: list, capital: float) -> go.Figure:
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.markdown("## ⚡ ORB Bot")
+    st.markdown("## ORB-Trading-Bot")
     st.markdown("<p style='color:#6b7280;font-size:12px;margin-top:-12px;'>Opening Range Breakout</p>", unsafe_allow_html=True)
     st.divider()
 
@@ -353,7 +353,7 @@ c6.metric("Avg loss",  f"₹{avg_loss:,.0f}")
 st.divider()
 
 # ── Tabs ───────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3 = st.tabs(["📊  Price chart", "📈  Equity curve", "📋  Trade log"])
+tab1, tab2, tab3 = st.tabs(["Price chart", "Equity curve", "Trade log"])
 
 with tab1:
     st.plotly_chart(build_chart(df, trades_df, ticker), use_container_width=True)
